@@ -1,0 +1,32 @@
+@import "setup";
+@import "variables";
+@import "mixins";
+@import "universalStyles";
+
+//header
+header {
+    background-image: url(../assets/contact-header.jpg);
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    .headerFlex {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    ul {
+        display: flex;
+        li {
+            padding: 50px 18px;
+            a {
+                color: $white;
+            }
+        }
+    }
+    h1 {
+        padding: 60px 10px;
+        font-weight: $regular;
+    }
+}

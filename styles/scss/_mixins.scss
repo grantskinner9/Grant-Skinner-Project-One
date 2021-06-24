@@ -1,0 +1,15 @@
+@import "variables";
+
+@mixin font($fontsize, $fontweight) {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+@mixin button($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color: $color;
+    @include font(1.12rem, $regular);
+    padding: 12px;
+}

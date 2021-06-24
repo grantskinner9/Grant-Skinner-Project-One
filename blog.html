@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper headerFlex">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainFlex">
+
+            <aside>
+                <div class="asideImage">
+                    <img src="./assets/blog-side-image.jpg" alt="Salmon dish">
+                </div>
+                <div class="asideText">
+                    <div class="featuredRestaurants">
+                        <h3 class="asideHeading">Featured Restaurants</h3>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out
+                            more.</p>
+                    </div>
+                    <div class="recentPosts">
+                        <h3 class="asideHeading">Recent Posts</h3>
+                        <ul>
+                            <li>Donec facilisis tortor ut</li>
+                            <li>Augue lacinia at viverra</li>
+                            <li>Semper sed sapien metus</li>
+                            <li>Scelerisque nec pharetra id</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="rightSection">
+                <section class="careers">
+                    <img src="./assets/blog-post-image.jpg" alt="Server waiting table">
+                    <div class="sectionText">
+                        <h2>Employment Opportunities</h2>
+                        <p class="date">Monday October 30, 2019 by Sulaire</p>
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue
+                            enim,
+                            pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit
+                            amet
+                            risus. Nam tempus vel odio vitae aliquam.</p>
+                        <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante
+                            venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien
+                            convallis
+                            eu. Nulla ut turpis in diam dapibus consequat.Fusce vehicula dolor arcu, sit amet blandit
+                            dolor
+                            mollis nec. Donec viverra eleifend lacu.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium tempor. Ut eget imperdiet
+                            neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu
+                            aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget nibh.
+                            Suspendisse
+                            luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus
+                            mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
+                        <p>Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu
+                            tortor
+                            posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                    </div>
+                </section>
+                <section class="commentSection">
+                    <div class="wrapper">
+                        <h2>Comments:</h2>
+                        <div class="comment">
+                            <div class="commentImage">
+                                <img src="./assets/comment-1.jpg" alt="Comment 1">
+                            </div>
+                            <div class="commentText">
+                                <p class="date">Tuesday October 9th, 2019 by Ali</p>
+                                <p>Fusce vehicula dolor arcu, sit amet blandit mollis nec. Donec viverra eleifend lacus,
+                                    vitae
+                                    ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                                    euismod
+                                    scelerisque ligula. Maecenas eu varius <risus class=""></risus>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="commentImage">
+                                <img src="./assets/comment-2.jpg" alt="Comment 2">
+                            </div>
+                            <div class="commentText">
+                                <p class="date">Wednesday October 10th, 2019 by Lisa</p>
+                                <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis
+                                    nunc
+                                    sollicitudin ultrices. Donec euismod scelerisque ligula</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form">
+                    <form action="#" method="#" class="myForm" name="myForm">
+
+                        <label for="userName" class="sr-only">Enter your name:</label>
+                        <input type="text" id="userName" name="userName" placeholder="Name">
+
+                        <label for="userEmail" class="sr-only">Enter your email:</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
+
+                        <label for="feedback" class="sr-only">Enter your comment:</label>
+                        <textarea name="userFeedback" id="feedback" placeholder="Comment"></textarea>
+
+                        <button type="submit" class="button">Post Comment</button>
+
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright ©2019 Juno College</p>
+    </footer>
+
+</body>
+
+</html>
