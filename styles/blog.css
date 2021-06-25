@@ -242,7 +242,7 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -343,7 +343,8 @@ img {
   letter-spacing: 1.5px;
 }
 
-.readMore {
+.readMore,
+.button {
   background-color: #FFD300;
   color: #171B0E;
   text-transform: uppercase;
@@ -351,6 +352,12 @@ img {
   font-size: 1.12rem;
   font-weight: 400;
   padding: 12px;
+  cursor: pointer;
+}
+.readMore:hover, .readMore:focus,
+.button:hover,
+.button:focus {
+  background-color: #ffd5007d;
 }
 
 .findOutMore {
@@ -361,6 +368,10 @@ img {
   font-size: 1.12rem;
   font-weight: 400;
   padding: 12px;
+  cursor: pointer;
+}
+.findOutMore:hover, .findOutMore:focus {
+  background-color: #262626;
 }
 
 header {
@@ -392,9 +403,26 @@ header ul li {
 header ul li a {
   color: #FFFFFF;
 }
+header ul li a:hover, header ul li a:focus {
+  border-bottom: 1px solid #FFD300;
+}
 header h1 {
   padding: 60px 10px;
   font-weight: 400;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger li {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.hamburger a:hover,
+.hamburger a:focus {
+  border-bottom: 2px solid #FFD300;
 }
 
 main {
@@ -547,6 +575,10 @@ input::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
+input:hover, input:focus {
+  border: 2px solid #FFD300;
+  background-color: #171B0E;
+}
 
 textarea {
   resize: none;
@@ -578,6 +610,9 @@ textarea::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
+textarea:hover, textarea:focus {
+  background-color: #171B0E;
+}
 
 button {
   background-color: #FFD300;
@@ -596,4 +631,51 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  ul.sliding-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    width: 100vw;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    z-index: 1;
+  }
+
+  input[type=checkbox]:checked + ul.sliding-menu {
+    right: 0;
+  }
+
+  input[type=checkbox] {
+    display: none;
+    position: relative;
+  }
+
+  label[for=toggle] {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+  }
 }

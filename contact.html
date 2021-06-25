@@ -20,16 +20,60 @@
         <div class="wrapper headerFlex">
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <label for="toggle"><i class="fas fa-bars hamburger"></i></label>
+                    <input type="checkbox" id="toggle" name="toggle" />
+                    <ul class="sliding-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             <h1>Get in touch</h1>
         </div>
     </header>
 
+    <main>
+        <div class="contactTextCol">
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            <p>info@email.com</p>
+            <div class="address">
+                <p>123-456-7890<br>123 Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+            </div>
+        </div>
+        <section class="form">
+            <form action="#" method="#" class="myForm" name="myForm">
+
+                <label for="userName" class="sr-only">Enter your name:</label>
+                <input type="text" id="userName" name="userName" placeholder="Name">
+
+                <label for="userEmail" class="sr-only">Enter your email:</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
+
+                <label for="feedback" class="sr-only">Message</label>
+                <textarea name="userFeedback" id="feedback" placeholder="Message"></textarea>
+
+                <button type="submit" class="button">Submit</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright ©2019 Juno College</p>
+    </footer>
 </body>
 
 </html>

@@ -7,7 +7,7 @@ html {
 
 .wrapper {
     max-width: 1280px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -97,10 +97,21 @@ img {
     letter-spacing: 1.5px;
 }
 
-.readMore {
+.readMore,
+.button {
     @include button($yellow, $darkgreen);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: #ffd5007d
+    }
 }
 
 .findOutMore {
     @include button($black, $white);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: rgb(38, 38, 38);
+    }
 }
