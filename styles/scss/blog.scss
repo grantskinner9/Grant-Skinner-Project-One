@@ -4,6 +4,7 @@
 @import "universalStyles";
 
 // header
+.blog {
 header {
     background-image: url(../assets/blog-header.jpg);
     height: 75vh;
@@ -252,4 +253,5 @@ footer {
         color: white;
         z-index: 10;
     }
+}
 }

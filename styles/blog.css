@@ -374,7 +374,7 @@ img {
   background-color: #262626;
 }
 
-header {
+.blog header {
   background-image: url(../assets/blog-header.jpg);
   height: 75vh;
   background-position: center;
@@ -382,7 +382,7 @@ header {
   background-size: cover;
   color: #FFFFFF;
 }
-header .headerFlex {
+.blog header .headerFlex {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,44 +392,40 @@ header .headerFlex {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header ul {
+.blog header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header ul li {
+.blog header ul li {
   padding: 50px 18px;
 }
-header ul li a {
+.blog header ul li a {
   color: #FFFFFF;
 }
-header ul li a:hover, header ul li a:focus {
+.blog header ul li a:hover, .blog header ul li a:focus {
   border-bottom: 1px solid #FFD300;
 }
-header h1 {
+.blog header h1 {
   padding: 60px 10px;
   font-weight: 400;
 }
-
-.hamburger {
+.blog .hamburger {
   display: none;
 }
-
-.hamburger li {
+.blog .hamburger li {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
-
-.hamburger a:hover,
-.hamburger a:focus {
+.blog .hamburger a:hover,
+.blog .hamburger a:focus {
   border-bottom: 2px solid #FFD300;
 }
-
-main {
+.blog main {
   background-color: #2B331B;
   color: white;
 }
-main .mainFlex {
+.blog main .mainFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,78 +436,73 @@ main .mainFlex {
       -ms-flex-align: self-start;
           align-items: self-start;
 }
-
-aside {
+.blog aside {
   background: #171B0E;
   color: #FFFFFF;
   margin-top: 150px;
   margin-left: 60px;
   width: 25%;
 }
-aside .asideImage {
+.blog aside .asideImage {
   position: relative;
   right: 80px;
   bottom: 20px;
 }
-aside .asideImage img {
+.blog aside .asideImage img {
   width: 115%;
 }
-aside h3 {
+.blog aside h3 {
   padding-bottom: 20px;
 }
-
-.asideText {
+.blog .asideText {
   padding: 25px;
 }
-.asideText .recentPosts {
+.blog .asideText .recentPosts {
   padding-top: 80px;
 }
-.asideText .recentPosts li {
+.blog .asideText .recentPosts li {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
-.asideText .recentPosts li:before {
+.blog .asideText .recentPosts li:before {
   content: "•";
   padding-right: 20px;
 }
-
-.rightSection {
+.blog .rightSection {
   width: 60%;
 }
-
-.careers {
+.blog .careers {
   position: relative;
   right: 0;
   bottom: 150px;
 }
-.careers img {
+.blog .careers img {
   -webkit-box-shadow: -25px 25px #FFD300;
           box-shadow: -25px 25px #FFD300;
 }
-.careers .sectionText {
+.blog .careers .sectionText {
   padding: 100px 75px 150px;
   border-left: 5px solid #FFD300;
   border-bottom: 5px solid #FFD300;
   margin-left: -25px;
 }
-.careers .sectionText h2 {
+.blog .careers .sectionText h2 {
   color: #FFD300;
 }
-.careers .sectionText p {
+.blog .careers .sectionText p {
   padding: 25px 0;
 }
-
-.commentSection {
+.blog .commentSection {
   position: relative;
   bottom: 100px;
 }
-.commentSection h2 {
+.blog .commentSection h2 {
   padding-bottom: 40px;
 }
-.commentSection .comment {
+.blog .commentSection .comment {
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,18 +514,17 @@ aside h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.commentSection .comment .commentImage {
+.blog .commentSection .comment .commentImage {
   width: 10%;
 }
-.commentSection .comment .commentText {
+.blog .commentSection .comment .commentText {
   width: 85%;
   padding-right: 50px;
 }
-.commentSection .comment .date {
+.blog .commentSection .comment .date {
   color: #FFD300;
 }
-
-form {
+.blog form {
   position: relative;
   bottom: 100px;
   display: -webkit-box;
@@ -547,40 +537,38 @@ form {
           justify-content: space-between;
   padding-right: 70px;
 }
-
-input {
+.blog input {
   border-bottom: 2px solid #FFD300;
   color: #FFFFFF;
   width: calc((100% / 2) - 2%);
   padding: 30px;
   letter-spacing: 1.2px;
 }
-input::-webkit-input-placeholder {
+.blog input::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::-moz-placeholder {
+.blog input::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input:-ms-input-placeholder {
+.blog input:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::-ms-input-placeholder {
+.blog input::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::placeholder {
+.blog input::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input:hover, input:focus {
+.blog input:hover, .blog input:focus {
   border: 2px solid #FFD300;
   background-color: #171B0E;
 }
-
-textarea {
+.blog textarea {
   resize: none;
   width: 100%;
   height: 250px;
@@ -590,31 +578,30 @@ textarea {
   color: #FFFFFF;
   letter-spacing: 1.2px;
 }
-textarea::-webkit-input-placeholder {
+.blog textarea::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::-moz-placeholder {
+.blog textarea::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea:-ms-input-placeholder {
+.blog textarea:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::-ms-input-placeholder {
+.blog textarea::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::placeholder {
+.blog textarea::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea:hover, textarea:focus {
+.blog textarea:hover, .blog textarea:focus {
   background-color: #171B0E;
 }
-
-button {
+.blog button {
   background-color: #FFD300;
   color: #171B0E;
   text-transform: uppercase;
@@ -625,21 +612,18 @@ button {
   width: 100%;
   cursor: pointer;
 }
-
-footer {
+.blog footer {
   background-color: #0F0F0F;
   color: #FFFFFF;
   text-align: center;
   padding: 5px 0;
 }
-
 @media (max-width: 768px) {
-  .hamburger {
+  .blog .hamburger {
     display: inline-block;
     font-size: 2.5rem;
   }
-
-  ul.sliding-menu {
+  .blog ul.sliding-menu {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
@@ -660,17 +644,14 @@ footer {
             justify-content: space-evenly;
     z-index: 1;
   }
-
-  input[type=checkbox]:checked + ul.sliding-menu {
+  .blog input[type=checkbox]:checked + ul.sliding-menu {
     right: 0;
   }
-
-  input[type=checkbox] {
+  .blog input[type=checkbox] {
     display: none;
     position: relative;
   }
-
-  label[for=toggle] {
+  .blog label[for=toggle] {
     position: fixed;
     top: 10px;
     right: 10px;

@@ -373,7 +373,7 @@ img {
   background-color: #262626;
 }
 
-header {
+.contact header {
   background-image: url(../assets/contact-header.jpg);
   height: 75vh;
   background-position: center;
@@ -381,7 +381,7 @@ header {
   background-size: cover;
   color: #FFFFFF;
 }
-header .headerFlex {
+.contact header .headerFlex {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,40 +391,36 @@ header .headerFlex {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header ul {
+.contact header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header ul li {
+.contact header ul li {
   padding: 50px 18px;
 }
-header ul li a {
+.contact header ul li a {
   color: #FFFFFF;
 }
-header ul li a:hover, header ul li a:focus {
+.contact header ul li a:hover, .contact header ul li a:focus {
   border-bottom: 1px solid #FFD300;
 }
-header h1 {
+.contact header h1 {
   padding: 60px 10px;
   font-weight: 400;
 }
-
-.hamburger {
+.contact .hamburger {
   display: none;
 }
-
-.hamburger li {
+.contact .hamburger li {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
-
-.hamburger a:hover,
-.hamburger a:focus {
+.contact .hamburger a:hover,
+.contact .hamburger a:focus {
   border-bottom: 2px solid #FFD300;
 }
-
-main {
+.contact main {
   background-color: #2B331B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,12 +429,11 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.contactTextCol {
+.contact .contactTextCol {
   padding: 100px 0 0 80px;
   color: #FFFFFF;
 }
-.contactTextCol .socials {
+.contact .contactTextCol .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,14 +443,13 @@ main {
   width: 50%;
   padding-bottom: 20px;
 }
-.contactTextCol .socials a {
+.contact .contactTextCol .socials a {
   color: #FFD300;
 }
-.contactTextCol .address {
+.contact .contactTextCol .address {
   padding-top: 20px;
 }
-
-form {
+.contact form {
   width: 85%;
   position: relative;
   bottom: 120px;
@@ -476,40 +470,38 @@ form {
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
 }
-
-input {
+.contact input {
   border-bottom: 2px solid #FFD300;
   color: #FFFFFF;
   width: calc((100% / 2) - 2%);
   padding: 30px;
   letter-spacing: 1.2px;
 }
-input::-webkit-input-placeholder {
+.contact input::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::-moz-placeholder {
+.contact input::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input:-ms-input-placeholder {
+.contact input:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::-ms-input-placeholder {
+.contact input::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input::placeholder {
+.contact input::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-input:hover, input:focus {
+.contact input:hover, .contact input:focus {
   border: 2px solid #FFD300;
   background-color: #2B331B;
 }
-
-textarea {
+.contact textarea {
   resize: none;
   width: 100%;
   height: 250px;
@@ -519,31 +511,30 @@ textarea {
   color: #FFFFFF;
   letter-spacing: 1.2px;
 }
-textarea::-webkit-input-placeholder {
+.contact textarea::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::-moz-placeholder {
+.contact textarea::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea:-ms-input-placeholder {
+.contact textarea:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::-ms-input-placeholder {
+.contact textarea::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea::placeholder {
+.contact textarea::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
 }
-textarea:hover, textarea:focus {
+.contact textarea:hover, .contact textarea:focus {
   background-color: #2B331B;
 }
-
-button {
+.contact button {
   background-color: #FFD300;
   color: #171B0E;
   text-transform: uppercase;
@@ -554,21 +545,18 @@ button {
   width: 100%;
   cursor: pointer;
 }
-
-footer {
+.contact footer {
   background-color: #0F0F0F;
   color: #FFFFFF;
   text-align: center;
   padding: 5px 0;
 }
-
 @media (max-width: 768px) {
-  .hamburger {
+  .contact .hamburger {
     display: inline-block;
     font-size: 2.5rem;
   }
-
-  ul.sliding-menu {
+  .contact ul.sliding-menu {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
@@ -589,17 +577,14 @@ footer {
             justify-content: space-evenly;
     z-index: 1;
   }
-
-  input[type=checkbox]:checked + ul.sliding-menu {
+  .contact input[type=checkbox]:checked + ul.sliding-menu {
     right: 0;
   }
-
-  input[type=checkbox] {
+  .contact input[type=checkbox] {
     display: none;
     position: relative;
   }
-
-  label[for=toggle] {
+  .contact label[for=toggle] {
     position: fixed;
     top: 10px;
     right: 10px;

@@ -4,6 +4,7 @@
 @import "universalStyles";
 
 //header
+.contact {
 header {
     background-image: url(../assets/contact-header.jpg);
     height: 75vh;
@@ -176,4 +177,5 @@ footer {
         color: white;
         z-index: 10;
     }
+}
 }
