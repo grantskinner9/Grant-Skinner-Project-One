@@ -168,11 +168,12 @@ input {
     border-bottom: 2px solid $yellow;
     color: $white;
     width: calc((100% / 2) - 2%);
-    padding: 30px;
+    padding: 20px;
     letter-spacing: 1.2px;
     &::placeholder {
         letter-spacing: 1.2px;
         opacity: 1;
+        font-size: 1rem;
     }
     &:hover,
     &:focus {
@@ -186,7 +187,7 @@ textarea {
     width: 100%;
     height: 250px;
     border: 2px solid $yellow;
-    padding: 30px;
+    padding: 20px;
     margin: 4% 0;
     color: $white;
     letter-spacing: 1.2px;
@@ -214,9 +215,22 @@ footer {
     padding: 5px 0;
 }
 
+@media (max-width: 980px) {
+    .asideHeading{
+        font-size: 1rem;
+    }
+}
 
 
 @media (max-width: 768px) {
+    // header
+    header h1 {
+        padding-top: 200px;
+    }
+
+    .navigation {
+        display: none;
+    }
 
     .hamburger {
         display: inline-block;
@@ -253,5 +267,72 @@ footer {
         color: white;
         z-index: 10;
     }
+
+    // main
+    main{
+        .mainFlex {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    aside {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .asideImage{
+            position: static;
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+        .asideText {
+            width: 60%;
+        }
+    }
+
+    .rightSection {
+        width: 100%;
+    }
+
+    .careers {
+        position: static;
+    }
+
+    
+    .commentSection {
+        position: static;
+        padding: 100px 0;
+    }
+
+    form {
+        padding: 0;
+    }
 }
+
+@media(max-width: 480px) {
+    aside {
+        .asideImage{
+            display: none;
+        }
+        .asideText {
+            width: 100%;
+            .recentPosts {
+                padding-top: 50px;
+            }
+        }
+    }
+
+    
+    .careers {
+        .sectionText {
+            padding-bottom: 100px;
+        }
+    }
+
+}
+
 }
