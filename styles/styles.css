@@ -1909,15 +1909,16 @@ img {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
+    padding-top: 150px;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .navigation {
-    visibility: hidden;
+    display: none;
   }
 
   .hamburger {
@@ -2027,7 +2028,7 @@ img {
             align-items: center;
   }
   .photoGallery .photoFlex img {
-    width: 50%;
+    width: 60%;
     padding: 25px 0;
   }
 }
