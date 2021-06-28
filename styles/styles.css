@@ -1868,13 +1868,9 @@ img {
   .about .aboutFlex .aboutContainer {
     width: 80%;
     margin: 30px auto;
-    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
     -ms-flex-wrap: wrap;
