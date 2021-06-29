@@ -202,6 +202,11 @@ textarea {
     display: none;
 }
 
+i.hamburger:hover,
+i.hamburger:focus {
+    color: $yellow;
+}
+
 .hamburger li {
     font-family: $primaryFont;
     text-align: center;
@@ -250,7 +255,7 @@ footer {
     }
 
     input[type="checkbox"] {
-        display: none;
+        opacity: 0;
         position: relative;
     }
 

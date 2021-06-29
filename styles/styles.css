@@ -494,6 +494,11 @@ textarea::placeholder {
   display: none;
 }
 
+i.hamburger:hover,
+i.hamburger:focus {
+  color: #FFD300;
+}
+
 .hamburger li {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -548,7 +553,7 @@ footer {
   }
 
   input[type=checkbox] {
-    display: none;
+    opacity: 0;
     position: relative;
   }
 
