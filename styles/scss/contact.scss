@@ -140,7 +140,46 @@ footer {
 }
 
 
+
+@media(max-width: 980px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .form {
+        order: -1;
+        position: static;
+        width: 100%;
+        form {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    
+    .contactTextCol {
+        padding: 50px 0;
+        text-align: center;
+        .socials {
+            width: 100%;
+            justify-content: center;
+            li {
+                padding: 0 10px;
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
+    header h1 {
+        padding-top: 200px;
+    }
+
+    .navigation {
+        display: none;
+    }
 
     .hamburger {
         display: inline-block;
@@ -177,35 +216,7 @@ footer {
         color: white;
         z-index: 10;
     }
-}
 
-@media(max-width: 980px) {
-    main {
-        flex-direction: column;
-    }
-
-    .form {
-        order: -1;
-        position: static;
-        width: 100%;
-        form {
-            position: static;
-            width: 100%;
-            box-shadow: none;
-        }
-    }
-
-    .contactTextCol {
-        padding: 50px 0;
-        text-align: center;
-        .socials {
-            width: 100%;
-            justify-content: center;
-            li {
-                padding: 0 10px;
-            }
-        }
-    }
 }
 
 }

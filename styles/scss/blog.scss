@@ -236,6 +236,7 @@ footer {
         display: inline-block;
         font-size: 2.5rem;
     }
+
     ul.sliding-menu {
         background-color: rgba(0, 0, 0, 0.9);
         position: fixed;
@@ -318,7 +319,10 @@ footer {
     }
 
     form {
-        padding: 0;
+        padding: 70px;
+        input{
+            width: 100%;
+        }
     }
 }
 

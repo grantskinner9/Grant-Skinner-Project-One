@@ -723,7 +723,10 @@ img {
     padding-right: 0px;
   }
   .blog form {
-    padding: 0;
+    padding: 70px;
+  }
+  .blog form input {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
