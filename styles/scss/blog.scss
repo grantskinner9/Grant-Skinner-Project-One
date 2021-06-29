@@ -306,6 +306,15 @@ footer {
     .commentSection {
         position: static;
         padding: 100px 0;
+        .comment {
+            .commentImage {
+                width: 15%;
+            }
+            .commentText {
+                width: 80%;
+                padding-right: 0px;
+            }
+        }
     }
 
     form {

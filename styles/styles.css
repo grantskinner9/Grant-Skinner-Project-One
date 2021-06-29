@@ -1300,6 +1300,13 @@ img {
     position: static;
     padding: 100px 0;
   }
+  .blog .commentSection .comment .commentImage {
+    width: 15%;
+  }
+  .blog .commentSection .comment .commentText {
+    width: 80%;
+    padding-right: 0px;
+  }
   .blog form {
     padding: 0;
   }
