@@ -205,8 +205,8 @@ header {
 @media (max-width: 768px) {
     // header
     .index h1 {
-        font-size: 2.25rem;
-        padding-top: 150px;
+        font-size: 3rem;
+        padding-top: 70px;
     }
 
     h2 {
@@ -263,6 +263,12 @@ header {
                 padding: 25px 0;
             }
         }
+    }
+}
+
+@media(max-width: 480px) {
+    .index h1 {
+        font-size: 2.5rem;
     }
 }
 

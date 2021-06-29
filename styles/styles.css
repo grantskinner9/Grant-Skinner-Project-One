@@ -786,8 +786,8 @@ footer {
 }
 @media (max-width: 768px) {
   .home .index h1 {
-    font-size: 2.25rem;
-    padding-top: 150px;
+    font-size: 3rem;
+    padding-top: 70px;
   }
   .home h2 {
     font-size: 1.75rem;
@@ -854,6 +854,11 @@ footer {
   .home .photoGallery .photoFlex img {
     width: 60%;
     padding: 25px 0;
+  }
+}
+@media (max-width: 480px) {
+  .home .index h1 {
+    font-size: 2.5rem;
   }
 }
 
