@@ -17,6 +17,11 @@ html {
     margin: 0 auto;
 }
 
+.largeWrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,4 +119,12 @@ img {
     &:focus {
         background-color: rgb(38, 38, 38);
     }
+}
+
+header {
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
 }

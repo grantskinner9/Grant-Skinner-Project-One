@@ -1,17 +1,8 @@
-@import "setup";
-@import "variables";
-@import "mixins";
-@import "universalStyles";
 
 //header
 .contact {
 header {
     background-image: url(../assets/contact-header.jpg);
-    height: 75vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $white;
     .headerFlex {
         height: 100%;
         display: flex;
@@ -53,6 +44,9 @@ header {
 
 main {
     background-color: $green;
+}
+
+.contactFlex {
     display: flex;
     justify-content: space-between;
 }
@@ -142,7 +136,7 @@ footer {
 
 
 @media(max-width: 980px) {
-    main {
+    .contactFlex {
         flex-direction: column;
     }
     
@@ -154,6 +148,7 @@ footer {
             position: static;
             width: 100%;
             box-shadow: none;
+            padding: 20px;
             input {
                 width: 100%;
             }
