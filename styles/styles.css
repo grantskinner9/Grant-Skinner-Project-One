@@ -546,6 +546,7 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     z-index: 1;
+    padding-bottom: 100px;
   }
 
   input[type=checkbox]:checked + ul.sliding-menu {
@@ -1070,6 +1071,9 @@ footer {
   }
   .blog aside .asideText .recentPosts {
     padding-top: 50px;
+  }
+  .blog h2 {
+    font-size: 1.75rem;
   }
   .blog .careers .sectionText {
     padding-bottom: 100px;
