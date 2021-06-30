@@ -477,22 +477,27 @@ textarea {
 textarea::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
+  color: #FFFFFF;
 }
 textarea::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
+  color: #FFFFFF;
 }
 textarea:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
+  color: #FFFFFF;
 }
 textarea::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
+  color: #FFFFFF;
 }
 textarea::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
+  color: #FFFFFF;
 }
 
 .hamburger {
