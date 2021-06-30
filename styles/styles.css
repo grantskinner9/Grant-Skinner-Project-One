@@ -434,26 +434,31 @@ input::-webkit-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 input::-moz-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 input:-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 input::-ms-input-placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 input::placeholder {
   letter-spacing: 1.2px;
   opacity: 1;
   font-size: 1rem;
+  color: #FFFFFF;
 }
 input:hover, input:focus {
   border: 2px solid #FFD300;
