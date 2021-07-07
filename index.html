@@ -28,7 +28,6 @@
                 </ul>
                 <div class="hamburger">
                     <label for="toggle"><i class="fas fa-bars hamburger"></i></label>
-                    <input type="checkbox" id="toggle" name="toggle" />
                     <ul class="sliding-menu">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./index.html">About</a></li>
@@ -147,10 +146,18 @@
         </section>
 
         <section class="photoGallery">
-            <div class="wrapper photoFlex">
-                <img src="./assets/gallery-image-1.jpg" alt="Photo of edison bulbs">
-                <img src="./assets/gallery-image-2.jpg" alt="Florescent sign that reads 'Take Away'">
-                <img src="./assets/gallery-image-3.jpg" alt="Table with a variety of thai cuisine">
+            <div class="wrapper arrowFlex">
+                <i class="fas fa-chevron-left previous"></i>
+                <div class="photoFlex slider">
+                    <img src="./assets/gallery-image-1.jpg" alt="Photo of edison bulbs" class="slide leftImage">
+                    <img src="./assets/gallery-image-2.jpg" alt="Florescent sign that reads 'Take Away'"
+                        class="slide middleImage">
+                    <img src="./assets/gallery-image-3.jpg" alt="Table with a variety of thai cuisine"
+                        class="slide rightImage">
+                    <img src="./assets/blog-side-image.jpg" alt="Photo of fish meal" class="slide">
+                    <img src="./assets/square-image.jpg" alt="Indoor restaurant setting" class="slide">
+                </div>
+                <i class="fas fa-chevron-right next"></i>
             </div>
         </section>
 
@@ -158,6 +165,7 @@
     <footer>
         <p>Copyright ©2019 Juno College</p>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

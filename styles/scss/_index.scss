@@ -140,6 +140,11 @@ header {
 .photoGallery {
     background-color: $darkgreen;
     padding: 100px 0;
+    .arrowFlex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .photoFlex {
         display: flex;
         justify-content: space-between;
@@ -147,6 +152,36 @@ header {
             width: calc((100% / 3) - 30px);
         }
     }
+    i {
+        color: $white;
+        font-size: 3.5rem;
+        padding: 0 30px;
+        &:hover,
+        &:focus {
+            color: $yellow;
+            cursor: pointer;
+        }
+    }
+    .end {
+        color: grey;
+        &:hover,
+        &:focus {
+            color: grey;
+            cursor: auto;
+        }
+    }
+}
+.slide {
+    position: fixed;
+}
+.slide.leftImage {
+    position: static;
+}
+.slide.middleImage {
+    position: static;
+}
+.slide.rightImage {
+    position: static;
 }
 
 
@@ -259,16 +294,32 @@ header {
             flex-direction: column;
             align-items: center;
             img {
-                width: 60%;
-                padding: 25px 0;
+                width: 300px;
+                height: 300px;
+                // padding: 25px 0;
             }
         }
+    }
+    .slide.middleImage {
+        position: fixed;
+    }
+    .slide.rightImage {
+        position: fixed;
     }
 }
 
 @media(max-width: 480px) {
     .index h1 {
         font-size: 2.5rem;
+    }
+
+    .photoGallery {
+        .photoFlex {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
     }
 }
 
